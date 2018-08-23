@@ -35,5 +35,13 @@ This project requires a mongo database to store data.
     cd spot
     npm install
     ```
+1. Edit these lines in `reddit_helper.js` to contain your [reddit app credentials](https://github.com/reddit-archive/reddit/wiki/OAuth2):
+   ```js
+   const r = new snoowrap({
+       userAgent: 'Linux:XXXXXXXXXX:1.0 (by /u/XXXXX)',
+       clientId: 'XXXXXXXXXX',
+       clientSecret: 'XXXXX'
+   })
+   ```
 
 Now you may try to run it with `node index.js` and then visit http://localhost/u/someUserName
