@@ -1,0 +1,20 @@
+{
+  "name": "snooper",
+  "version": "1.0.0",
+  "description": "Judge accounts by what they write.",
+  "main": "index.js",
+  "dependencies": {
+    "array-most-common": "^1.0.0",
+    "compromise": "^11.5.3",
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "mongodb": "^3.0.5",
+    "snoowrap": "^1.15.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Anderson",
+  "license": "MIT"
+}

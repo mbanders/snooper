@@ -1,0 +1,14 @@
+[Unit]
+Description=Snooper Web App
+ 
+[Service]
+ExecStart=/home/ubuntu/snooper/index.js
+Restart=always
+User=nobody
+Group=nogroup
+Environment=PATH=/usr/bin:/usr/local/bin
+Environment=NODE_ENV=production
+WorkingDirectory=/home/ubuntu/snooper
+ 
+[Install]
+WantedBy=multi-user.target
