@@ -7,7 +7,13 @@ Tested for Linux (Ubuntu/Debian). If you're using Windows, good luck.
 
 This project requires a mongo database to store data.
 
-1. Install mongodb.
+1. Install mongodb on your Ubuntu 16 machine. ([if you need more details](https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-16-04))
+   ```sh
+   sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
+   echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list
+   sudo apt-get update
+   sudo apt-get install mongodb-org
+   ```
 1. Install node and npm:
     ```sh
     sudo apt-get update
