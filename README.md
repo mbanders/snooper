@@ -14,6 +14,10 @@ This project requires a mongo database to store data.
    sudo apt-get update
    sudo apt-get install mongodb-org
    ```
+1. Start the mongo server on your machine:
+   ```sh
+   sudo systemctl start mongod
+   ```
 1. Install node and npm:
     ```sh
     sudo apt-get update
@@ -32,7 +36,7 @@ This project requires a mongo database to store data.
 1. Get this project and install required packages:
     ```sh
     git clone git@github.com:mbanders/snooper.git
-    cd spot
+    cd snooper/
     npm install
     ```
 1. Edit these lines in `reddit_helper.js` to contain your [reddit app credentials](https://github.com/reddit-archive/reddit/wiki/OAuth2):
